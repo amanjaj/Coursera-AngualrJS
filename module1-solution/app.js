@@ -1,7 +1,7 @@
 (function(){
     
         angular.module('LunchCheck', [])
-        .controller('LunchCheckController', function($scope) {
+        .controller('LunchCheckController', ['$scope', function($scope){ 
              $scope.lunchmenu = "";   
                 $scope.state = "";
             $scope.checkTooMuch = function(){
@@ -23,7 +23,7 @@
                     }
                        
                     };
-        });
-    
+        
+    }]);
     
     })();
